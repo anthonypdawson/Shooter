@@ -1,0 +1,51 @@
+﻿using Microsoft.Xna.Framework;
+
+namespace Shooter
+{
+    public class FpsCounter
+    {
+        #region Fields
+
+        protected int fps = 0;
+        protected int frameCount = 0;
+        protected float totalElapsedTime = 0.0f;
+
+        #endregion
+
+        #region Properties
+
+        public int Fps
+        {
+            get { return fps; }
+        }
+
+        #endregion
+
+        /// <summary>
+        /// Initialize members
+        /// </summary>
+        public void Initialize()
+        {
+            fps = 0;
+            frameCount = 0;
+            totalElapsedTime = 0.0f;
+        }
+
+        /// <summary>
+        /// Updates the frame count
+        /// </summary>
+        public void Update(GameTime gameTime)
+        {
+            totalElapsedTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            frameCount++;
+
+            //  Calculate frame count during one second
+            if (totalElapsedTime >= 1.0f)
+            {
+                fps = frameCount;
+                frameCount = 0;
+                totalElapsedTime = 0.0f;
+            }
+        }
+    }
+}

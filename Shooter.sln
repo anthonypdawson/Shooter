@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shooter", "Shooter\Shooter\Shooter.csproj", "{7779E28D-1313-49C3-9B7B-CBB612F1DE20}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ShooterContent", "Shooter\ShooterContent\ShooterContent.contentproj", "{3F5F5DC6-80DF-4318-A86E-E174DB297B15}"
+EndProject
+Global
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 205e05ea-fbb6-4056-970a-ee93b5bcb2a3
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7779E28D-1313-49C3-9B7B-CBB612F1DE20}.Debug|x86.ActiveCfg = Debug|x86
+		{7779E28D-1313-49C3-9B7B-CBB612F1DE20}.Debug|x86.Build.0 = Debug|x86
+		{7779E28D-1313-49C3-9B7B-CBB612F1DE20}.Release|x86.ActiveCfg = Release|x86
+		{7779E28D-1313-49C3-9B7B-CBB612F1DE20}.Release|x86.Build.0 = Release|x86
+		{3F5F5DC6-80DF-4318-A86E-E174DB297B15}.Debug|x86.ActiveCfg = Debug|x86
+		{3F5F5DC6-80DF-4318-A86E-E174DB297B15}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
